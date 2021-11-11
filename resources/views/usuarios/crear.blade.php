@@ -12,19 +12,27 @@
                     <div class="card-body">
 
                         @if($errors->any())
-                            <div class="alert alert-dark alert-dismissible fadeshow" role="alert">
+                        <div class="alert alert-dark alert-dismissible fadeshow" role="alert">
                             <strong>Revise los campos</strong>
-                                @foreach ($errors->all() as $error)
-                                    <span class="badge badge-danger">{{$error}}</span>
-                                @endforeach 
+                            @foreach ($errors->all() as $error)
+                            <span class="badge badge-danger">{{$error}}</span>
+                            @endforeach
                             <button type="button" class="close" data-dismiss="alert" aria-label="Clase">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            </div>
+                        </div>
                         @endif
                         {!! Form::open(array('route'=>'usuarios.store','method'=>'POST')) !!}
 
                         <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="cedula">cedula</label>
+                                    {!! Form::text('cedula', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label for="name">Nombre</label>
@@ -34,8 +42,43 @@
 
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
+                                    <label for="fecha">Fecha Nacimiento</label>
+                                    {!! Form::date('fecha', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="apellidos">Apellidos</label>
+                                    {!! Form::text('apellidos', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
                                     <label for="email">Email</label>
                                     {!! Form::text('email', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="celular">Celular</label>
+                                    {!! Form::text('celular', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="direccion">Direccion</label>
+                                    {!! Form::text('direccion', null, array('class'=>'form-control')) !!}
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="telefono">Telefono</label>
+                                    {!! Form::text('telefono', null, array('class'=>'form-control')) !!}
                                 </div>
                             </div>
 
