@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="first_name">Cedula</label><span
+                            <label for="cedula">Cedula</label><span
                                     class="text-danger">*</span>
                             <input id="cedula" type="text"
                                    class="form-control{{ $errors->has('cedula') ? ' is-invalid' : '' }}"
@@ -41,7 +41,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="first_name">Fecha de Nacimiento</label><span
+                            <label for="fecha">Fecha de Nacimiento</label><span
                                     class="text-danger">*</span>
                             <input id="fecha" type="date"
                                    class="form-control{{ $errors->has('fecha') ? ' is-invalid' : '' }}"
@@ -56,7 +56,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="first_name">Apellidos</label><span
+                            <label for="apellidos">Apellidos</label><span
                                     class="text-danger">*</span>
                             <input id="apellidos" type="text"
                                    class="form-control{{ $errors->has('apellidos') ? ' is-invalid' : '' }}"
@@ -86,7 +86,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="first_name">Celular</label><span
+                            <label for="celular">Celular</label><span
                                     class="text-danger">*</span>
                             <input id="celular" type="text"
                                    class="form-control{{ $errors->has('celular') ? ' is-invalid' : '' }}"
@@ -101,7 +101,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="first_name">Telefono</label><span
+                            <label for="telefono">Telefono</label><span
                                     class="text-danger">*</span>
                             <input id="telefono" type="text"
                                    class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}"
