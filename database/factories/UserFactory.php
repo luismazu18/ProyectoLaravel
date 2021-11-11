@@ -15,9 +15,15 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
+            'cedula' => $this->faker->cedula(),
             'name' => $this->faker->name(),
+            'fecha' => $this->faker->fecha(),
+            'apellidos' => $this->faker->apellidos(),
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
+            'celular' => $this->faker->celular(),
+            'direccion' => $this->faker->direccion(),
+            'telefono' => $this->faker->telefono(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
         ];
